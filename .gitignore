@@ -1,3 +1,14 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+.astro/
+
 # Logs
 logs
 *.log
@@ -7,43 +18,27 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Environment
+.env
+.env.local
+.env.production
 *.local
+
+# Claude agent files
+.claude/
+*.claude
+.claude.json
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.env
 
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
-
-# Build outputs
-dist/
-build/
-.astro/
-
-# Claude agent files — NEVER commit these
-.claude/
-*.claude
-.claude.json
-
-# Environment
-.env
-.env.local
-.env.production
-
-# OS
+# OS files
 .DS_Store
 Thumbs.db
