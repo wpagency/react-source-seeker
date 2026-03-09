@@ -1,0 +1,17 @@
+
+/* Enhanced Scrollbar Styles */
+@layer base {
+  /* Enhanced scrollbar with modern colors */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-crystal-900;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neon-500/50 rounded-full hover:bg-neon-400/70;
+    will-change: background-color;
+  }
+}

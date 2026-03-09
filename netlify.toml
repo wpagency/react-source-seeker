@@ -1,0 +1,11 @@
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# This is the most important part - this redirects all routes back to index.html
+# allowing React Router to handle the routing client-side
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

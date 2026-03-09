@@ -1,0 +1,177 @@
+/* PWA-specific styles */
+
+/* Base styles for PWA mode */
+.pwa-mode {
+  /* Remove browser UI elements */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  
+  /* Prevent overscroll effects */
+  overscroll-behavior: contain;
+}
+
+/* Adjust layout when running as PWA */
+.pwa-mode main {
+  /* Account for bottom nav bar */
+  padding-bottom: 4rem;
+}
+
+/* Status bar styles */
+.pwa-status-bar {
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Bottom navigation for PWA */
+.pwa-bottom-nav {
+  height: 64px;
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Offline mode styles */
+.offline-mode .online-only {
+  display: none !important;
+}
+
+.online-mode .offline-only {
+  display: none !important;
+}
+
+/* Splash screen styles */
+.pwa-splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.pwa-splash-logo {
+  animation: pwa-pulse 2s infinite ease-in-out;
+}
+
+@keyframes pwa-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+/* App-like scrolling */
+.pwa-mode {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide browser address bar */
+@media screen and (display-mode: standalone) {
+  html {
+    height: 100vh;
+  }
+}
+
+/* Optimized touch targets for PWA */
+.pwa-mode button,
+.pwa-mode a,
+.pwa-mode input[type="checkbox"],
+.pwa-mode input[type="radio"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Improved form inputs for mobile */
+.pwa-mode input,
+.pwa-mode select,
+.pwa-mode textarea {
+  font-size: 16px; /* Prevents iOS zoom on focus */
+}
+
+/* Pull-to-refresh animation */
+.pull-to-refresh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+
+.pull-indicator {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(14, 165, 233, 0.3);
+  border-top-color: rgba(14, 165, 233, 1);
+  border-radius: 50%;
+  animation: pwa-spin 1s linear infinite;
+}
+
+@keyframes pwa-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Swipe navigation */
+.swipe-area {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 100px;
+  transform: translateY(-50%);
+}
+
+.swipe-area-left {
+  left: 0;
+}
+
+.swipe-area-right {
+  right: 0;
+}
+
+/* Offline indicator */
+.offline-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(239, 68, 68, 0.9);
+  color: white;
+  text-align: center;
+  padding: 4px;
+  font-size: 12px;
+  z-index: 9999;
+}
+
+/* PWA install button */
+.pwa-install-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.5);
+  z-index: 100;
+  transition: transform 0.2s ease;
+}
+
+.pwa-install-button:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,22 @@
+
+/* Accessibility - Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-shimmer,
+  .animate-gradient,
+  .animate-float,
+  .animate-float-slow,
+  .animate-glow,
+  .animate-spin-slow,
+  .animate-fade-in-up,
+  .animate-pulse-ring,
+  .animate-text-shimmer {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.reduce-motion * {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}

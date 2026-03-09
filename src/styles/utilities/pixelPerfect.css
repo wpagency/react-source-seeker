@@ -1,0 +1,41 @@
+
+/* Pixel-perfect utilities for crisp rendering */
+
+.pixel-crisp {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+}
+
+/* Ensure pixel alignment for absolutely positioned elements */
+.pixel-align {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Prevent blurry text during transitions */
+.text-sharp {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Force pixel grid alignment for small elements */
+.pixel-snap {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Prevent sub-pixel rendering issues with thin lines */
+.crisp-border {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+/* Force GPU rendering for smooth animations */
+.gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}

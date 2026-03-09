@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0f172a" />
+  <path d="M200,150 L200,150 C177.909,150 160,132.091 160,110 C160,87.909 177.909,70 200,70 C222.091,70 240,87.909 240,110 C240,132.091 222.091,150 200,150 Z M200,230 L200,230 C155.817,230 120,194.183 120,150 L280,150 C280,194.183 244.183,230 200,230 Z" fill="#0ea5e9" opacity="0.2" />
+  <text x="200" y="180" font-family="Arial, sans-serif" font-size="16" fill="#f9fafb" text-anchor="middle">Image Unavailable Offline</text>
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Connect to the internet to view this image</text>
+</svg>

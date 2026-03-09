@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import design system */
+@import './styles/design-system.css';
+
+/* Import enhanced typography system */
+@import './styles/enhanced-typography.css';
+@import './styles/utilities/enhanced-utilities.css';
+
+/* Import PWA styles */
+@import './styles/pwa.css';
+
+/* Import modular base styles */
+@import './styles/base/index.css';
+
+/* Import component styles */
+@import './styles/components/buttons.css';
+
+/* Import new utility modules */
+@import './styles/utilities-new/index.css';
+@import './styles/utilities/mobile-optimized.css';
+@import './styles/utilities/spacing.css';
+
+/* Import existing animation and utility systems */
+@import './styles/animations/index.css';
+@import './styles/utilities/index.css';
+
+/* Critical performance optimizations */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+  }
+
+  /* GPU acceleration for performance */
+  .gpu-layer {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  /* Enhanced readability */
+  .text-balance {
+    text-wrap: balance;
+  }
+}

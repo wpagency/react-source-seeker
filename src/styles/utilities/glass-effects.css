@@ -1,0 +1,33 @@
+
+/* Glass Morphism Effects */
+@layer utilities {
+  /* Enhanced glass morphism */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-neon {
+    background: rgba(34, 197, 94, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+  }
+
+  /* Professional modern button styles */
+  .glass-button-primary {
+    background: rgba(34, 197, 94, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    color: white;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .glass-button-primary:hover {
+    background: rgba(34, 197, 94, 0.2);
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 10px 40px rgba(34, 197, 94, 0.3);
+    transform: translateY(-2px);
+  }
+}

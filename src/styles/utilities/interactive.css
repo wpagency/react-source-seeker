@@ -1,0 +1,27 @@
+
+@layer utilities {
+  /* Link effects */
+  .animated-underline {
+    @apply relative inline-block;
+  }
+  
+  .animated-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-cosmic-gradient transition-all duration-300 ease-out rounded-full;
+  }
+  
+  .animated-underline:hover::after {
+    @apply w-full;
+  }
+  
+  /* Card effects */
+  .premium-card {
+    @apply glass-card transition-all duration-300;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .premium-card:hover {
+    transform: translateY(-10px);
+  }
+}

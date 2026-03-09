@@ -1,0 +1,26 @@
+
+@layer utilities {
+  /* Consistent spacing system based on 8px grid */
+  .space-xs { margin: 0.5rem; }
+  .space-sm { margin: 1rem; }
+  .space-md { margin: 1.5rem; }
+  .space-lg { margin: 2rem; }
+  .space-xl { margin: 3rem; }
+  .space-2xl { margin: 4rem; }
+  
+  /* Section spacing */
+  .section-padding-sm { padding: 3rem 0; }
+  .section-padding-md { padding: 4rem 0; }
+  .section-padding-lg { padding: 6rem 0; }
+  .section-padding-xl { padding: 8rem 0; }
+  
+  /* Container spacing */
+  .container-spacing {
+    padding-left: max(1.5rem, env(safe-area-inset-left));
+    padding-right: max(1.5rem, env(safe-area-inset-right));
+  }
+  
+  /* Card spacing */
+  .card-spacing { gap: 2rem; }
+  .card-spacing-lg { gap: 3rem; }
+}

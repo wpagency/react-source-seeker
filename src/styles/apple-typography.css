@@ -1,0 +1,207 @@
+
+/* Enhanced Typography System with Inter Variable */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Font loading optimization */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Unified Typography Scale with Performance Optimizations */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+  contain: layout style;
+}
+
+/* Standout Hero Typography */
+h1 {
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 30%, #c7d2fe 60%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 0.9;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+h2 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+h3 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  contain: layout;
+}
+
+h4 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  contain: layout;
+}
+
+/* Uniform Body Text with Performance */
+p, li, a:not(.btn), span:not(.heading) {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.8);
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+}
+
+/* Enhanced Button Typography */
+button, .btn, .button {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  text-rendering: optimizeLegibility;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Code Typography */
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', 'SF Mono', Monaco, 'Inconsolata', 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+/* Performance-optimized Typography Classes */
+.text-cinematic {
+  background: linear-gradient(135deg, #ffffff 0%, #0ea5e9 25%, #d946ef 50%, #facc15 75%, #ffffff 100%);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-flow 8s ease-in-out infinite;
+  will-change: background-position;
+  transform: translateZ(0);
+}
+
+.text-inevitable-enhanced {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 30%, #c7d2fe 60%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Performance Selection */
+::selection {
+  background: rgba(14, 165, 233, 0.3);
+  color: #ffffff;
+}
+
+/* Optimized Typography Animations */
+@keyframes gradient-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Font Loading States */
+.font-loading {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+.font-loaded {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Responsive Typography Utilities with Performance */
+@layer base {
+  .display-xl {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    contain: layout style;
+  }
+  
+  .display-lg {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    contain: layout style;
+  }
+  
+  .subtitle-lg {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .body-lg {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .font-display {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Enhanced Text Shadows with GPU Acceleration */
+.text-shadow-glow {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(14, 165, 233, 0.2);
+  transform: translateZ(0);
+}
+
+.text-shadow-primary {
+  text-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+  transform: translateZ(0);
+}
+
+.text-shadow-accent {
+  text-shadow: 0 0 20px rgba(217, 70, 239, 0.4);
+  transform: translateZ(0);
+}
